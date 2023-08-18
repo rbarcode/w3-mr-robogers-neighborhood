@@ -50,11 +50,11 @@ Expected Output:
 ```  
 
 Test: "It should return an array of numbers from 0 to the user's inputted number."  
-Code: robotTranslator(0);  
+Code: robotTranslator("0");  
 Expected Output: [0]  
 
 Test: "It should determine whether an index in the array contains a 3."  
-Code: robotTranslator(3);  
+Code: robotTranslator("3");  
 Expected Outcome: true  
 
 Test: "It should determine whether an index in the array is a numeral with at least one digit that is a 3."  
@@ -68,9 +68,13 @@ This index includes a three!
 This index includes a three!
 ```
 
-Test: "It should replace the numeral that has at least one digit that is a 3 with the phrase 'Won't you be my neighbor?'"  
-Code: robotTranslator(3);  
+Test: "It should replace the numeral that has at least one digit that is a 3 with the phrase 'Won't you be my neighbor?'."  
+Code: robotTranslator("3");  
 Expected Outcome: [0,1,2,"Won't you be my neighbor?"]  
+
+Test: "It should replace any numerals that have at least one digit that is a 2 with the phrase 'Boop!'."  
+Code: robotTranslator("3");  
+Expected Outcome: [0,1,"Boop!","Won't you be my neighbor?"] 
 
 ## Known Bugs
 
