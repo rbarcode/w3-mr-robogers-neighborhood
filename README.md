@@ -32,8 +32,18 @@ Describe: stringToInteger()
 
 Test: "It should check to see whether the string contains solely integers."  
 Code: stringToInt("hello");  
-Expected Output: NaN  
+Expected Output:  
+```  
+NaN  
+```    
   
+Test: "It should store verified integers parsed from the string."  
+Code: stringToInt("123");  
+Expected Output:  
+```
+> verifiedInt;  
+123  
+```  
 
 ## Known Bugs
 
