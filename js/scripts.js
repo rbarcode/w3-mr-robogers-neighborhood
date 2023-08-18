@@ -23,7 +23,9 @@ function robotTranslator(userInput) {
     if (intArray[i].toString().includes("3")) {
       outputArray.push("Won't you be my neighbor?");
     } else if (intArray[i].toString().includes("2")) {
-      outputArray.push("Boop!")
+      outputArray.push("Boop!");
+    } else if (intArray[i].toString().includes("1")) {
+      outputArray.push("Beep!");
     } else {
       outputArray.push(intArray[i]);
     }
