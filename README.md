@@ -58,8 +58,15 @@ Code: robotTranslator(3);
 Expected Outcome: true  
 
 Test: "It should determine whether an index in the array is a numeral with at least one digit that is a 3."  
-Code: robotTranslator(13);  
-Expected Outcome: console.log("This index includes a three! This index includes a three!")  
+Code: 
+```  
+robotTranslator(13); //With following inside: console.log("This index includes a three!")
+```  
+Expected Outcome:   
+```
+This index includes a three!
+This index includes a three!
+```
 
 Test: "It should replace the numeral that has at least one digit that is a 3 with the phrase 'Won't you be my neighbor?'"  
 Code: robotTranslator(3);  
