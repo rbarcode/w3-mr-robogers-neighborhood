@@ -28,6 +28,11 @@
 ## Tests
 
 
+Describe: stringToInteger();
+
+Test: "It should check to see whether the string contains solely integers."
+Code: stringToInteger("hello");
+Expected Output: NaN
 
 ## Known Bugs
 
