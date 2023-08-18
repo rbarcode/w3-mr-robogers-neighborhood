@@ -76,9 +76,14 @@ Test: "It should replace any numerals that have at least one digit that is a 2 w
 Code: robotTranslator("3");  
 Expected Outcome: [0,1,"Boop!","Won't you be my neighbor?"] 
 
-Test: It should replace any numerals that have at least one digit that is a 1 with the word 'Beep!'."  
+Test: "It should replace any numerals that have at least one digit that is a 1 with the word 'Beep!'."  
 Code: robotTranslator("3");  
 Expected Outcome: [0,"Beep!","Boop!","Won't you be my neighbor?"]  
+
+Test: "It should return the array as a string."  
+Code: robotTranslator("3");  
+Expected Outcome: "0, 'Beep!', 'Boop!', 'Won't you be my neighbor?'"  
+
 
 ## Known Bugs
 
