@@ -59,7 +59,7 @@ Expected Outcome: true
 
 Test: "It should determine whether an index in the array is a numeral with at least one digit that is a 3."  
 Code: robotTranslator(13);  
-Expected Outcome: true  
+Expected Outcome: console.log("This index includes a three!")  
 
 ## Known Bugs
 
