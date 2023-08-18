@@ -19,8 +19,8 @@ function robotTranslator(userInput) {
 
   for (let i = 0; i < intArray.length; i++) {
     console.log("loop!")
-    if (intArray[i] === 3) {
-      return true;
+    if (intArray[i].toString().includes("3")) {
+      console.log("this index includes a three!");
     }
   }
 
