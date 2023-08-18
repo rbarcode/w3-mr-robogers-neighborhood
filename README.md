@@ -38,7 +38,11 @@ NaN
 ```    
   
 Test: "It should store verified integers parsed from the string."  
-Code: stringToInt("123");  
+Code: 
+```
+let verifiedInt;
+stringToInt("123");
+```  
 Expected Output:  
 ```
 > verifiedInt;  
