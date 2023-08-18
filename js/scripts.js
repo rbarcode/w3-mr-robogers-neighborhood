@@ -1,23 +1,28 @@
 // Business Logic
 
-let verifiedInt;
 
-function stringToInt(userInput) {
+
+function robotTranslator(userInput) {
+
+  let verifiedInt;
 
   if (isNaN(parseInt(userInput))) {
-    //Will change this return later
+    //Will change this later
     return "Please input a number using Arabic numerals 0-9."
-  } 
+  }
   else {
-    return verifiedInt = parseInt(userInput)
+    verifiedInt = parseInt(userInput)
   }
 
-}
+  let intArray = [];
+  intArray = Array.from({ length: verifiedInt + 1 }, (value, index) => index);
 
-function intToArray() {
-  
-  let intArray = Array.from({length: verifiedInt + 1}, (value, index) => index);
-  return intArray;
+  for (let i = 0; i < intArray.length; i++) {
+    console.log("loop!")
+    if (intArray[i] === 3) {
+      return true;
+    }
+  }
 
 }
 
