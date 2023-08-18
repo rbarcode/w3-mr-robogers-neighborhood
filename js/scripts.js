@@ -22,6 +22,8 @@ function robotTranslator(userInput) {
     console.log("loop!")
     if (intArray[i].toString().includes("3")) {
       outputArray.push("Won't you be my neighbor?");
+    } else if (intArray[i].toString().includes("2")) {
+      outputArray.push("Boop!")
     } else {
       outputArray.push(intArray[i]);
     }
