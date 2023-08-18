@@ -5,6 +5,7 @@
 function robotTranslator(userInput) {
 
   let verifiedInt;
+  let robotOutput;
 
   if (isNaN(parseInt(userInput))) {
     //Will change this later
@@ -19,18 +20,19 @@ function robotTranslator(userInput) {
 
   let outputArray = [];
   for (let i = 0; i < intArray.length; i++) {
-    console.log("loop!")
     if (intArray[i].toString().includes("3")) {
-      outputArray.push("Won't you be my neighbor?");
+      outputArray.push('\'Wont you be my neighbor?\'');
     } else if (intArray[i].toString().includes("2")) {
-      outputArray.push("Boop!");
+      outputArray.push('\'Boop!\'');
     } else if (intArray[i].toString().includes("1")) {
-      outputArray.push("Beep!");
+      outputArray.push('\'Beep!\'');
     } else {
       outputArray.push(intArray[i]);
     }
+    robotOutput = outputArray.join(", ").replace(/Wont/g, "Won't");
   }
-  return outputArray;
+  return robotOutput;
+  
 }
 
 
