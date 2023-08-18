@@ -17,14 +17,16 @@ function robotTranslator(userInput) {
   let intArray = [];
   intArray = Array.from({ length: verifiedInt + 1 }, (value, index) => index);
 
+  let outputArray = [];
   for (let i = 0; i < intArray.length; i++) {
     console.log("loop!")
     if (intArray[i].toString().includes("3")) {
-      console.log("this index includes a three!");
+      outputArray.push("Won't you be my neighbor?");
+    } else {
+      outputArray.push(intArray[i]);
     }
   }
-
+  return outputArray;
 }
-
 
 
