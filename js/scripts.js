@@ -1,9 +1,13 @@
+// Business Logic
 
+function stringToInt(userInput) {
 
+  let verifiedInt;
 
-function stringToInteger(userInput) {
-  let inputtedInt = parseInt(userInput);
-
-  return inputtedInt;
-
+  if (isNaN(parseInt(userInput))) {
+    //Will change this return later
+    return "Please input a number using Arabic numerals 0-9."
+  } else {
+    return verifiedInt = parseInt(userInput);
+  }
 }
