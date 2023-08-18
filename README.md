@@ -28,7 +28,7 @@
 ## Tests
 
 
-Describe: stringToInt()
+**Describe: stringToInt()**
 
 Test: "It should check to see whether the string contains solely integers."  
 Code: stringToInt("hello");  
@@ -49,11 +49,17 @@ Expected Output:
 123  
 ```  
 
-Describe: intToArray()
+**Describe: intToArray()**
 
-Test: "It should return an array of numbers from 0 to the user's inputted number"  
+Test: "It should return an array of numbers from 0 to the user's inputted number."  
 Code: intToArray(0);  
 Expected Output: [0]  
+
+**Describe: numberContains3()**
+
+Test: "It should determine whether an index in the array contains a 3."  
+Code: numberContains3(3);  
+Expected Outcome: true  
 
 ## Known Bugs
 
