@@ -72,9 +72,13 @@ Test: "It should replace the numeral that has at least one digit that is a 3 wit
 Code: robotTranslator("3");  
 Expected Outcome: [0,1,2,"Won't you be my neighbor?"]  
 
-Test: "It should replace any numerals that have at least one digit that is a 2 with the phrase 'Boop!'."  
+Test: "It should replace any numerals that have at least one digit that is a 2 with the word 'Boop!'."  
 Code: robotTranslator("3");  
 Expected Outcome: [0,1,"Boop!","Won't you be my neighbor?"] 
+
+Test: It should replace any numerals that have at least one digit that is a 1 with the word 'Beep!'."  
+Code: robotTranslator("3");  
+Expected Outcome: [0,"Beep!","Boop!","Won't you be my neighbor?"]  
 
 ## Known Bugs
 
