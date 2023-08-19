@@ -25,7 +25,7 @@ Try it out for yourself and start talking to/like a robot today!
 ## Setup/Installation Requirements
 
 1. Navigate to https://github.com/rbarcode/w3-mr-robogers-neighborhood.git in an internet browser.
-2. Click on the green “<> Code” button approximately 2/3s to the right-hand side of the page near the top.
+2. Click on the green “<> Code” on the far right-hand side of the page's main column.
 3. On the “Local” tab of the mini-window that opens underneath the “<>Code” button, copy the HTTPS link in the gray bar to your clipboard.
 4. In GitBash (or your terminal/shell of your choice/computer), navigate to the directory where you wish to download the project and enter the following prompt (replacing the italicized word with the appropriate link): git clone *url-of-the-repository-copied-in-the-previous-step*
 5. Your chosen directory will now contain a folder titled “w3-mr-robogers-neighborhood”.
@@ -37,12 +37,6 @@ Try it out for yourself and start talking to/like a robot today!
 
 **Describe: robotTranslator()**
 
-Test: "It should check to see whether the string contains solely integers."  
-Code: robotTranslator("hello");  
-Expected Output:  
-```  
-NaN  
-```    
   
 Test: "It should store verified integers parsed from the string."  
 Code: 
@@ -94,7 +88,7 @@ Expected Outcome: "0, 'Beep!', 'Boop!', 'Won't you be my neighbor?'"
 
 ## Known Bugs
 
-
+No known bugs.
 
 ## License
 
