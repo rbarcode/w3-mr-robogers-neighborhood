@@ -38,8 +38,10 @@ function submit() {
 
 function enableSubmission() {
 
-  const p = document.getElementById("new-p");
-  p.remove();
+  if (document.getElementById("submit-button").disabled === true) {
+    const p = document.getElementById("new-p");
+    p.remove();
+  }
 
   document.getElementById("submit-button").disabled = false;
 }
