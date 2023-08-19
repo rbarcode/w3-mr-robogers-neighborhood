@@ -30,9 +30,25 @@ function robotTranslator(userInput) {
     robotOutput = outputArray.join(", ").replace(/Wont/g, "Won't");
   }
   return robotOutput;
-  
+
 }
 
 
 // UI Logic
 
+window.addEventListener("load", submit);
+// window.addEventListener("reset", hideResults);
+
+function submit() {
+  const form = document.getElementById("talk-to-robot");
+  form.addEventListener("submit", handleFormSubmission);
+}
+
+function handleFormSubmission(event) {
+  event.preventDefault();
+
+  userInput = document.getElementById("number").value;
+  console.log("User entered the following number: " + userInput);
+
+  document.getElementById("submit-button").disabled = true;
+}
