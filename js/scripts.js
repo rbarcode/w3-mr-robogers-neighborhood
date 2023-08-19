@@ -4,7 +4,7 @@ function robotTranslator(userInput) {
 
   let verifiedInt = parseInt(userInput);
   let robotOutput;
-
+ 
   let intArray = [];
   intArray = Array.from({ length: verifiedInt + 1 }, (value, index) => index);
 
@@ -37,6 +37,10 @@ function submit() {
 }
 
 function enableSubmission() {
+
+  const p = document.getElementById("new-p");
+  p.remove();
+
   document.getElementById("submit-button").disabled = false;
 }
 
@@ -44,15 +48,18 @@ function handleFormSubmission(event) {
   event.preventDefault();
 
   userInput = document.getElementById("number").value;
-  const container = document.getElementById("container");
+  const container = document.getElementById("display-output");
   const p = document.createElement("p");
+  p.setAttribute("id", "new-p");
+ 
   const uiOutput = robotTranslator(userInput);
-
-  p.append(uiOutput);
+  
+  p.innerText = uiOutput;
   container.append(p);
-
+  
   document.getElementById("submit-button").disabled = true;
 
   return p;
+
 }
 
