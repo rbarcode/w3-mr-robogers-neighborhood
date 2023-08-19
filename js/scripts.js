@@ -30,6 +30,7 @@ function robotTranslator(userInput) {
 
 window.addEventListener("load", submit);
 window.addEventListener("reset", enableSubmission);
+window.addEventListener("mousemove", eyeballTracker);
 
 function submit() {
   const form = document.getElementById("talk-to-robot");
@@ -65,3 +66,24 @@ function handleFormSubmission(event) {
 
 }
 
+function eyeballTracker() {
+  let eye = document.querySelectorAll(".eyeball");
+  let x = event.clientX * 100 / window.innerWidth + "%";
+  let y = event.clientY * 100 / window.innerHeight + "%";
+  for (let i = 0; i < 2; i++) {
+    eye[i].style.left = x;
+    eye[i].style.top = y;
+    // eye[i].style.transform = "translate(-"+x+", -"+y+")";
+  }
+}
+
+// function eyeballTracker() {
+//   let eye = document.querySelectorAll(".eye");
+//   eye.forEach(function(eye) {
+//     let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+//     let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+//     let radian = Math.atan2(event.pageX - x, event.pageY - y);
+//     let rot = (radian * (180 / Math.PI) * -1);
+//     eye.style.transform = "rotate("+ rot +"deg)";
+//   });
+// }
