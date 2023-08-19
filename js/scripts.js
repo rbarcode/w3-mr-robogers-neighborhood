@@ -54,6 +54,7 @@ function handleFormSubmission(event) {
   const container = document.getElementById("display-output");
   const p = document.createElement("p");
   p.setAttribute("id", "new-p");
+  p.classList.add("p-results");
  
   const uiOutput = robotTranslator(userInput);
   
@@ -73,17 +74,6 @@ function eyeballTracker() {
   for (let i = 0; i < 2; i++) {
     eye[i].style.left = x;
     eye[i].style.top = y;
-    // eye[i].style.transform = "translate(-"+x+", -"+y+")";
+    eye[i].style.transform = "translate(-"+x+", -"+y+")";
   }
 }
-
-// function eyeballTracker() {
-//   let eye = document.querySelectorAll(".eye");
-//   eye.forEach(function(eye) {
-//     let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
-//     let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
-//     let radian = Math.atan2(event.pageX - x, event.pageY - y);
-//     let rot = (radian * (180 / Math.PI) * -1);
-//     eye.style.transform = "rotate("+ rot +"deg)";
-//   });
-// }

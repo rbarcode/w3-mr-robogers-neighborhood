@@ -1,3 +1,7 @@
+body {
+  background-color: rgba(218, 165, 32, 0.263);
+}
+
 
 #header {
   display: flex;
@@ -13,13 +17,14 @@
 }
 
 .face {
-  position: relative;
+  position: absolute;
   width: 250px;
   height: 250px;
-  background-color: gray;
+  background-color: rgb(190, 190, 190);
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 10px 5px 5px gray;
 }
 
 .face::before {
@@ -69,33 +74,30 @@
   transform: translate(-50%, -50%);
 }
 
-/* .eyes .eye {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  display: block;
-  background-color: white;
-  margin: 0 15px;
+.robot-body {
+  position: absolute;
+  width: 700px;
+  background-color: rgb(190, 190, 190);
+  top: 40%;
+  padding: 10px;
+  font-size: large;
+  color: black;
+  box-shadow: 10px 5px 5px gray;
+}
+
+.no-top-margin {
+  margin-top: 0;
+}
+
+
+#display-output {
+  background-color: #0f204b;
+  margin-top: 15px;
 
 }
 
-.eyes .eye::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translate(-50%, -50%);
-  width: 25px;
-  height: 25px;
-  background-color: black;
-
-}  */
-
-.robot-body {
-  position: absolute;
-  height: 400px;
-  width: 700px;
-  background-color: gray;
-  bottom: 0px;
-
+.p-results {
+  margin: 0;
+  padding: 10px;
+  color: #00a6ff;
 }
