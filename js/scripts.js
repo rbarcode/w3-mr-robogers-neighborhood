@@ -2,16 +2,8 @@
 
 function robotTranslator(userInput) {
 
-  let verifiedInt;
+  let verifiedInt = parseInt(userInput);
   let robotOutput;
-  let inputError = false;
-
-  if (isNaN(parseInt(userInput))) {
-    return inputError = true;
-  }
-  else {
-    verifiedInt = parseInt(userInput)
-  }
 
   let intArray = [];
   intArray = Array.from({ length: verifiedInt + 1 }, (value, index) => index);
@@ -37,18 +29,30 @@ function robotTranslator(userInput) {
 // UI Logic
 
 window.addEventListener("load", submit);
-// window.addEventListener("reset", hideResults);
+window.addEventListener("reset", enableSubmission);
 
 function submit() {
   const form = document.getElementById("talk-to-robot");
   form.addEventListener("submit", handleFormSubmission);
 }
 
+function enableSubmission() {
+  document.getElementById("submit-button").disabled = false;
+}
+
 function handleFormSubmission(event) {
   event.preventDefault();
 
   userInput = document.getElementById("number").value;
-  console.log("User entered the following number: " + userInput);
+  const container = document.getElementById("container");
+  const p = document.createElement("p");
+  const uiOutput = robotTranslator(userInput);
+
+  p.append(uiOutput);
+  container.append(p);
 
   document.getElementById("submit-button").disabled = true;
+
+  return p;
 }
+
