@@ -2,7 +2,7 @@
 
 #### By Richard Barbour II
 
-#### //One sentence summary to go here...//
+#### This page is a "robot translator" that takes a single number provided by the user and returns a neighborly message ... mostly in numbers, beeps and boops.
 
 
 ## Technologies Used
@@ -14,6 +14,13 @@
 
 ## Description
 
+The webpage prompts the user to input a single number before the page returns a message from a robot consisting of a sequence of numbers in ascending order from 0 to the number the user inputted.  
+
+However, and in the following order of precedence, any number that contains a three is replaced with a request to be neighbors, any number that contains a two is replaced by a "Boop!" and any number that contains a one is replaced by a "Beep!".  
+
+For example, an input of "4" will return the following message: "0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4"  
+
+Try it out for yourself and start talking to/like a robot today!
 
 ## Setup/Installation Requirements
 
