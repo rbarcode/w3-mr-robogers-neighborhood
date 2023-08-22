@@ -50,7 +50,7 @@ function enableSubmission() {
 function handleFormSubmission(event) {
   event.preventDefault();
 
-  userInput = document.getElementById("number").value;
+  let userInput = document.getElementById("number").value;
   const container = document.getElementById("display-output");
   const p = document.createElement("p");
   p.setAttribute("id", "new-p");

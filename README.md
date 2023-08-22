@@ -31,8 +31,8 @@ Try it out for yourself and start talking to/like a robot today!
 3. On the “Local” tab of the mini-window that opens underneath the “<>Code” button, copy the HTTPS link in the gray bar to your clipboard.
 4. In GitBash (or your terminal/shell of your choice/computer), navigate to the directory where you wish to download the project and enter the following prompt (replacing the italicized word with the appropriate link): git clone *url-of-the-repository-copied-in-the-previous-step*
 5. Your chosen directory will now contain a folder titled “w3-mr-robogers-neighborhood”.
-6. You can open the folder "w1-portfolio-landing-page" in VS Code (for example, by using the appropriate commands in GitBash or using the GUI and right-clicking on the option to “Open with Code” in the menu that pops up… note, you may need to select “Show more options” at the bottom of the menu if you don’t see “Open with Code” in the provided list).
-7. You can now read and edit the project files!
+6. Navigate inside the folder and find the file named "index.html".
+7. Double click on the file to open it up in your browser. (The first time you click on the file, you may be prompted by your operating system to choose how you wish to open the file; you can select your browser of choice from any of the browsers you have installed on your computer.)
 
 ## Tests
 
@@ -41,16 +41,13 @@ Try it out for yourself and start talking to/like a robot today!
 
   
 Test: "It should store verified integers parsed from the string."  
-Code: 
-```
-let verifiedInt;
-robotTranslator("123");
-```  
+Code:  
+&ensp; let verifiedInt;  
+&ensp; robotTranslator("123");  
 Expected Output:  
-```
-> verifiedInt;  
-123  
-```  
+&ensp; verifiedInt;  
+&ensp; 123  
+  
 
 Test: "It should return an array of numbers from 0 to the user's inputted number."  
 Code: robotTranslator("0");  
@@ -61,15 +58,12 @@ Code: robotTranslator("3");
 Expected Outcome: true  
 
 Test: "It should determine whether an index in the array is a numeral with at least one digit that is a 3."  
-Code: 
-```  
-robotTranslator(13); //With following inside: console.log("This index includes a three!")
-```  
+Code:  
+&ensp; robotTranslator(13); //With following inside:  
+&ensp; console.log("This index includes a three!")  
 Expected Outcome:   
-```
-This index includes a three!
-This index includes a three!
-```
+&ensp; This index includes a three!  
+&ensp; This index includes a three!  
 
 Test: "It should replace the numeral that has at least one digit that is a 3 with the phrase 'Won't you be my neighbor?'."  
 Code: robotTranslator("3");  
@@ -94,6 +88,24 @@ No known bugs.
 
 ## License
 
-[MIT License](https://choosealicense.com/licenses/mit/)
+MIT License
 
 Copyright (c) 2023 Richard Barbour II
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
